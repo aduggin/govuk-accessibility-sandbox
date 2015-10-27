@@ -1,0 +1,2 @@
+* Investigate/clarify use of links and buttons. We have a class that makes buttons and links look the same.
+We have links that look like links but trigger an action rather than go to a place.
