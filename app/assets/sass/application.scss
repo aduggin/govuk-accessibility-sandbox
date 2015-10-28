@@ -38,3 +38,54 @@
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you,
 // either add and import new partial files, or modify those in GOV.UK elements to fit your user needs.
+/* styles for the autocomplete dropdown */
+
+.typeahead,
+.tt-query,
+.tt-hint {
+  font-size: 19px;
+  line-height: 1.25;
+  font-weight: 300;
+  text-transform: none;
+  border: 1px solid #bbb;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.tt-query {
+  width: 18em;
+}
+
+.tt-hint{
+  display: none;
+}
+
+.tt-dropdown-menu {
+  padding: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.tt-suggestion {
+  padding: 0.5em;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.tt-suggestion p{
+  margin: 0;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+  color: #fff;
+  background-color: #0097cf;
+}
+
+.twitter-typeahead {
+  margin-bottom: 0.5em;
+
+  .validation-wrapper .optional-section & input {
+    margin-bottom: 0;
+  }
+}
