@@ -1,0 +1,54 @@
+{{<layouts/layout-two-thirds}}
+
+{{$pageTitle}}
+using details element
+{{/pageTitle}}
+
+{{$sub-content}}
+<h1>Autocomplete</h1>
+
+<h2>Test Case</h2>
+<div class="test-case">
+  <div class="added-country">
+    <label for="{{otherCountries0.id}}">
+        {{{messages.ordinary_nationality_whichCountry}}}
+    </label>
+    <div class="validation-wrapper">
+        <input type="text"
+               id="country"
+               name="country"
+               value=""
+               autocomplete="off"
+               class="form-control country-autocomplete"
+         />
+    </div>
+  </div>
+</div>
+
+<h2>Example Usage</h2>
+<p>Address lookup on <a href="https://www.gov.uk/register-to-vote">Register to vote</a>.</p>
+
+<h2>Background</h2>
+
+<p>Questions I have include:</p>
+
+<p>The pattern of having a list of items with a textbox filter is also to be found (in a different form) on the following pages:</p>
+<ul class="list-bullet">
+  <li><a href="https://www.gov.uk/foreign-travel-advice">Foreign travel advice</a></li>
+  <li><a href="https://beta.companieshouse.gov.uk/">Companies House</a></li>
+  <li><a href="https://github.com/timpaul/GOVUKCountrySelector">Tim Paul's country selector, based on the <a href="http://baymard.com/labs/country-selector">Baymard Institue's country selector</a></li>
+  <li><a href="https://hanshillen.github.io/jqtest/#goto_autocomplete">Hans Hillen's accessible autocomplete widget</a></li>
+</ul>
+
+<h3>Resources</h3>
+<ul class="list-bullet">
+  <li><a href="https://designpatterns.hackpad.com/Autocomplete-autosuggest-type-ahead-l3OHvWUmDml">The Hackpad page on autocompletes</a></li>
+</ul>
+
+
+<h2>Results</h2>
+insert findings or results when we have some
+
+{{/sub-content}}
+
+{{/layouts/layout-two-thirds}}
