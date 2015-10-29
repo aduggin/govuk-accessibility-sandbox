@@ -1,0 +1,46 @@
+{{<layouts/layout-two-thirds}}
+
+{{$pageTitle}}
+Address lookup
+{{/pageTitle}}
+
+{{$sub-content}}
+<h1>Address lookup</h1>
+
+<h2>Test Cases</h2>
+<ul class="list-bullet">
+    <li><a href="/tests/address-lookup-1">1 - HMRC prototype implementation</a></li>
+    <li><a href="/tests/address-lookup-2">2 - remove aria-hidden </a></li>
+</ul>
+
+<h2>Example Usage</h2>
+<p><a href="https://tax-credits-prototype.herokuapp.com/address/address">Tax credits service prototype</a></p>
+
+<h2>Background</h2>
+<p>Test case 1 is an example of a address look that the Tax Credits service team has put together, but it does not work correctly
+    under IE 9 (the edit boxes for house and postcode and find address button  are not being exposed  to JAWS.
+    When tested on IE 11, Firefox using JAWS and NVDA, the edit boxes are exposed and so is the find address button.
+    However, after entering details into the boxes and pressing the find address button, no results are found.
+    It was found to work with NVDA once, but the screen reader was not aware at first that the data was there, as the
+    focus did not move. The same results are found on Safari on the Mac too with Voiceover too.</p>
+
+<p>Finding an address lookup is a pattern that will be used on many services across government.  The first step is to
+come up with an accessible solution for the tax credits team. If this test well in user research on the tax credits project
+we should come up with a <a href="https://www.gov.uk/service-manual/user-centred-design/resources/patterns">Design Pattern
+for the Service Manual</a> and provide the code for an accessible implementation of it.
+In the long term it would be good to have reusable code for this design pattern</p>
+
+<p>Finding an address based on</p>
+
+<h3>Resources</h3>
+<ul>
+    <li><a href="https://designpatterns.hackpad.com/Addresses-CgrMSGRAhRc">GOV.UK design patterns wiki - Addresses</a></li>
+</ul>
+
+
+<h2>Results</h2>
+insert findings or results when we have some
+
+{{/sub-content}}
+
+{{/layouts/layout-two-thirds}}

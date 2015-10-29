@@ -1,0 +1,133 @@
+{{<layouts/layout-two-thirds}}
+
+{{$pageTitle}}
+Address lookup - Test case 1 - original HMRC alpha implementation
+{{/pageTitle}}
+
+{{$pageScript}}
+<script src="/public/javascripts/address-lookup-2.js"></script>
+{{/pageScript}}
+
+{{$sub-content}}
+<h1>Address lookup 1</h1>
+
+<h2>Test Case 1 - original HMRC alpha implementation</h2>
+<div class="test-case">
+    <form action="/" method="post" class="form">
+        <h1 class="form-title heading-large">
+            Change your address
+        </h1>
+
+        <!--Country selection-->
+        <fieldset class="inline" style="margin-bottom: 50px;">
+            <legend class="form-label-bold">Choose your location</legend>
+            <label class="block-label" for="uk-radio">
+                <input id="uk-radio" type="radio" name="choose-country" value="UK">United Kingdom
+            </label>
+            <label class="block-label" for="other-radio">
+                <input id="other-radio" type="radio" name="choose-country" value="other">Other
+            </label>
+        </fieldset>
+
+        <!-- Fields for UK Addresses -->
+        <div id="address-form-uk">
+
+            <!-- Post-code -->
+            <div id="find-address">
+                <div class="form-group" id="house-number-group">
+                    <label class="form-label-bold" for="house-number">House name or number</label>
+                    <input class="form-control" id="house-number" type="text">
+                </div>
+
+                <div class="form-group">
+                    <div class="error hidden">
+                        <p>Address not found. Enter a different address or type in your address</p>
+                    </div>
+                    <!--List of addresses-->
+                    <div id="found-address-list" class="hidden"></div>
+
+                    <div id="selected-address">
+                        <div class="form-group">
+                            <label class="form-label-bold" for="line1">House name or number</label>
+                            <input autocomplete="off" class="form-control" id="line1" name="line1" value="" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label-bold" for="line2">Address line 2</label>
+                            <input autocomplete="off" class="form-control" id="line2" name="line2" value="" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label-bold" for="line3">Address line 3</label>
+                            <input autocomplete="off" class="form-control" id="line3" name="line3" value="" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label-bold" for="city">Address line 4</label>
+                            <input autocomplete="off" class="form-control" id="city" name="city" value="" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label-bold" for="county">Town</label>
+                            <input autocomplete="off" class="form-control" id="county" name="city" value="" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label-bold" for="postcode">Postcode</label>
+                        <input autocomplete="off" class="form-control-1-8" id="postcode" name="postcode" value="" type="text" >
+                        <div id="address-finder-controls">
+                            <input type="button" id="find-address-btn" class="button" value="Find address">
+                            <p>or <a href="#" id="enter-address">type in your address</a></p>
+                        </div>
+                    </div>
+                    <div class="form-group" id="different-address-group">
+                        <p><a href="#" id="different-address-link">Find different address</a><p>
+                    </div>
+                </div>
+            </div>
+            <!--Placeholder for found adresses radio buttons list-->
+            <div id="found-address-list" class="hidden"></div>
+        </div>
+
+        <!-- Fields for non-UK Addresses -->
+        <div id="address-form-non-uk">
+            <div class="form-group">
+                <label class="form-label-bold" for="free-text-address">Full address</label>
+                <textarea id="free-text-address" class="form-control"></textarea>
+            </div>
+            <!-- Primary button-->
+        </div>
+
+        <!--Form submit button-->
+        <div class="form-group">
+            <input type="submit" id="continue" class="button" value="Continue">
+        </div>
+    </form>
+</div>
+
+
+<h2>Test Case 2 - improved implementation</h2>
+<div class="test-case">
+    <form action="/" method="post" class="form">
+        <h1 class="form-title heading-large">
+            Change your address
+        </h1>
+    </form>
+</div>
+
+
+<h2>Example Usage</h2>
+<p><a href="url">title</a></p>
+
+<h2>Background</h2>
+summary
+
+<h3>Resources</h3>
+<ul>
+    <li><a href="url">title</a></li>
+</ul>
+
+
+<h2>Results</h2>
+insert findings or results when we have some
+
+{{/sub-content}}
+
+{{/layouts/layout-two-thirds}}
