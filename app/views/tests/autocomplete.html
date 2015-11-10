@@ -4,6 +4,21 @@
 using details element
 {{/pageTitle}}
 
+{{$pageScript}}
+<!-- copied from register to vote -->
+<!-- https://github.com/alphagov/ier-frontend/blob/master/assets/javascripts/vendor/jquery/typeahead.js -->
+<script type="text/javascript" src="/public/javascripts/typeahead.js"></script>
+<!-- https://github.com/alphagov/ier-frontend/blob/master/assets/javascripts/vendor/mustache.js -->
+<script type="text/javascript" src="/public/javascripts/vendor/mustache.js"></script>
+
+<!-- https://github.com/alphagov/ier-frontend/blob/master/assets/javascripts/countries.js -->
+<script type="text/javascript" src="/public/javascripts/countries.js"></script>
+<!-- https://github.com/alphagov/ier-frontend/blob/master/assets/javascripts/forms.js -->
+<script type="text/javascript" src="/public/javascripts/autocomplete.js"></script>
+
+<script type="text/javascript" src="/public/javascripts/init-autocomplete.js"></script>
+{{/pageScript}}
+
 {{$sub-content}}
 <h1>Autocomplete</h1>
 
