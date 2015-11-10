@@ -25,7 +25,11 @@ table {
     // Right align headings for numeric content
     &.numeric {
       text-align: right;
-    } 
+    }
+
+    a {
+      font-weight: normal;
+    }
   }
 
   // Use tabular numbers for numeric table cells
